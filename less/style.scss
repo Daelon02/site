@@ -1,7 +1,37 @@
-@import "nullstyle.scss";
+@import "nullstyle/nullstyle.scss";
+@import "fonts/fonts.scss";
+@import "colors/colors.scss";
+@import "vars/vars.scss";
 
+.header-text{
+    @extend %font-header;
+}
 
-body{
-    padding: 0;
-    margin: 0;
+.bg-color{
+    background-color: $cb;
+}
+
+.z-ind{
+    z-index: 2;
+}
+
+.main-brand{
+    font-family: $ff;
+    font-size: $sz;
+    border: 4px solid $cw;
+    padding: $sz;
+    padding-top: $sz;
+    padding-bottom: $sz;
+}
+
+.first-bg{
+    position: relative;
+    bottom: 60px;
+    z-index: 1;
+    width: 100%;
+}
+
+.pos-nav{
+    position: relative;
+    top: $sz;
 }
